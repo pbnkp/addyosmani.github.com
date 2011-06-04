@@ -129,6 +129,10 @@ HEADER
 	top: 55px;
 }
 
+#site-headline{
+	font: bold 85px/100% 'LeagueGothicRegular', Arial;
+}
+
 /* searchform */
 #searchform {
 	position: absolute;
