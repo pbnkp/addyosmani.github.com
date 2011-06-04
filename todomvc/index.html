@@ -47,7 +47,8 @@
 			<ul id="main-nav" class="clearfix">
 				<li><a href="">Home</a></li>
 				<li><a href="https://github.com/addyosmani/todomvc/zipball/master">Download</a> </li>
-				<li><a href="">About</a></li>
+				<li><a href="#gettingstarted">Getting Started</a> </li>
+				<li><a href="#about">About</a></li>
 			</ul>
 			<!-- /#main-nav --> 
 		</nav>
@@ -93,10 +94,10 @@
 			
 			<!--startpara-->
 			<header>
-				<h1 class="post-title"><a href="#">Get Started With TodoMVC</a></h1>
+				<h1 class="post-title"><a name="gettingstarted">Getting Started With TodoMVC</a></h1>
 			</header>
 			<p>
-				Getting started with TodoMVC is quite straight-forward. You can either download the current stable release from the Downloads section in the sidebar or alternatively, clone the repo using the below information.
+				Getting started with TodoMVC is quite straight-forward. You can either download the current <strong>stable release</strong> from the Downloads section in the sidebar or alternatively, clone the repo using the below information.
 				
 				<pre class="brush: js">
 					git clone git://github.com/addyosmani/todomvc
@@ -104,7 +105,39 @@
 				
 			</p>
 			
+			<p>
+				The <strong>structure</strong> of the download package is quite easy to follow: each application/example will have it's own folder, with tool-specific implementations stored in a dedicated sub-folder. For example, todo-example/JavaScriptMVC contains the JMVC version of the todo app.
+			</p>
+			
+			<p>
+			<strong>Note:</strong> As TodoMVC aims to be completely self-contained, your download will include the libraries used for example applications and any of their dependancies as well. For libraries like Backbone and Spine this won't be an issue at all, but bare in mind some of the larger solutions may add to the size of the package.</p>
+			
+			
 			<!-- /.paragraph -->
+			
+				<p>&nbsp;</p>
+				
+				<!--startpara-->
+				<header>
+					<h1 class="post-title"><a name="about">About</a></h1>
+				</header>
+				<p>
+					When I first began exploring solutions that would help me use the MVC architecture pattern in my JavaScript apps, I found myself lost in a sea of choice. Many tools appeared to offer <strong>exactly</strong> what I needed, but even once I'd read their documentation and played around with their code, I still found it tricky to decide just which solution felt right for the job.
+				</p>
+				<p>
+					It wasn't until I began playing around with concepts like 'todo' app -  a simple list-based application tool and community members had been trying to port over from one framework to others - that I really found myself understanding how they differed in implementation when it actually came around to solving problems.</p>
+					<p>The problem was, some ported implementations of the app were scattered across forums or news-groups and the developers behind the apps didn't always maintain them or patch bugs <strong>beyond</strong> the initial release.
+				</p>
+				
+				<p>
+					That's really where TodoMVC came about. It's a simple idea in practice - a project aimed at providing the <strong>same application</strong> across multiple MVC frameworks starting off with the 'todo' app. Implementations will however be cross-browser compatible, self-contained (meaning you can play with them right out of the box) and I'll be working to expand the pack to cover frameworks like SproutCore and Sammy as well.
+				</p>
+				
+				<p>
+					I would like to thank the list of contributors to the project, many of who worked on the initial ports of the todo-app over to other frameworks for their work. Without it this project would have taken a lot longer to get out, so thanks for your time and efforts!.
+				</p>
+
+				<!-- /.paragraph -->
 			
 		
 		</article>
