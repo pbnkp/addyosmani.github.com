@@ -29,7 +29,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 GENERAL STYLING
 *************************************************************************************/
 body {
-	background: #dbdbd0 url() no-repeat center top;
+
+	background-color: #f0f0f0;
 	font: .81em/150% 'Helvetica Neue', Helvetica, Arial;
 	color: #666;
 }
@@ -42,8 +43,12 @@ a:hover {
 	text-decoration: underline;
 }
 p {
+	font: 20px/100% "Helvetica Neue",sans-serif;
 	margin: 0 0 1.2em;
 	padding: 0;
+	color:#000;
+	font-size: 1.2em;
+	line-height: 26px;
 }
 
 /* list */
@@ -55,6 +60,8 @@ ul, ol {
 li {
 	margin: 0 0 .5em 0;
 	padding: 0;
+	color:#000;
+	font-size: 1.2em;
 }
 
 /* headings */
@@ -111,14 +118,19 @@ HEADER
 /* site logo */
 #site-logo {
 	position: absolute;
-	top: 10px;
+
+	background-image:url('images/logo.gif');
+	width: 600px;
+	height: 100px;
 }
 #site-logo a {
-	font: bold 85px/100% 'LeagueGothicRegular', Arial;
-	color: #c24e31; /*de5a39;*/
+	/*
+	font: bold 70px/100% 'LeagueGothicRegular', Arial;
+	color: #c24e31; 
 	text-decoration: none;
 	letter-spacing:-3px;
-    text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px, hsl(15, 84%, 10%) 3px 3px, hsl(15, 84%, 10%) 4px 4px;
+    text-shadow: hsl(15, 84%, 10%) 1px 1px, hsl(15, 84%, 10%) 2px 2px, hsl(15, 84%, 10%) 3px 3px, hsl(15, 84%, 10%) 4px 4px;*/
+    
 }
 
 /* site description */
@@ -129,9 +141,10 @@ HEADER
 	top: 55px;
 }
 
-#site-headline{
-	font: 85px/100% 'LeagueGothicRegular', Arial;
+.site-headline{
+	font: 20px/100% "Helvetica Neue",sans-serif;
 	font-weight:normal;
+	line-height: 26px;
 }
 
 /* searchform */
@@ -240,11 +253,12 @@ CONTENT
 	margin-bottom: 40px;
 }
 .post-title {
-	margin: 0 0 5px;
+	margin: 0 0 5px 0;
 	padding: 0;
-	font: bold 45px/100% 'LeagueGothicRegular', Arial;
+	font: bold 30px/100% Helvetica, Arial, sans-serif;
 	letter-spacing:-1px;
 	text-shadow: 2px 3px 0px #ccc;
+	padding-bottom:5px;
 }
 .post-title a {
 	text-decoration: none;
