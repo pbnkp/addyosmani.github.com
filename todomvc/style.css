@@ -130,7 +130,8 @@ HEADER
 }
 
 #site-headline{
-	font: bold 85px/100% 'LeagueGothicRegular', Arial;
+	font: 85px/100% 'LeagueGothicRegular', Arial;
+	font-weight:normal;
 }
 
 /* searchform */
