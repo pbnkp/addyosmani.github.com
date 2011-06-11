@@ -1,0 +1,1 @@
+This is a repo for my projects requiring a micro-site or landing page such as TodoMVC. For the time being existing projects will likely continue to be hosted directly on addyosmani.com, however this may be subject to change in the future.
