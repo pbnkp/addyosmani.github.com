@@ -168,40 +168,6 @@
 			ul#icons span.ui-icon {float: left; margin: 0 4px;}
 			#buttons button { float:left; margin-right: 4px;}
 			#components { margin: 2em 0 1em; width:900px; margin:0 auto; padding:50px;}
-
-			.ui-dialog-buttonset .ui-button:nth-child(2){
-			  cursor: pointer;
-			  display: inline-block;
-			  background-color: #e6e6e6;
-			  background-repeat: no-repeat;
-			  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
-			  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-			  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
-			  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-			  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-			  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-			  padding: 5px 14px 6px;
-			  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-			  color: #333;
-			  font-size: 13px;
-			  line-height: normal;
-			  border: 1px solid #ccc;
-			  border-bottom-color: #bbb;
-			  -webkit-border-radius: 4px;
-			  -moz-border-radius: 4px;
-			  border-radius: 4px;
-			  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-			  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-			  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-			  -webkit-transition: 0.1s linear all;
-			  -moz-transition: 0.1s linear all;
-			  -ms-transition: 0.1s linear all;
-			  -o-transition: 0.1s linear all;
-			  transition: 0.1s linear all;
-			   overflow: visible;
-			}
-
 			#container { width:100%;display:block; }
 			#notice { width:900px; display:block; height:300px; clear:both; margin:0 auto;}
 			.col_r {float:right;}
@@ -724,7 +690,7 @@
 		<link href="third-party/jQuery-UI-Date-Range-Picker/css/ui.daterangepicker.css" media="screen" rel="Stylesheet" type="text/css" />
 
 		<p>&nbsp;</p>
-		<h2>Filament Date Range Picker</h2>
+		<h2>FilamentGroup Date Range Picker</h2>
 		<p>
 The date range picker plugin code is open source and available in a git repository, <a href="https://github.com/filamentgroup/jQuery-UI-Date-Range-Picker">jQuery-UI-Date-Range-Picker</a>. For demonstration sakes it is included in this theme pack with style updates.
 </p>
@@ -830,7 +796,6 @@ The date range picker plugin code is open source and available in a git reposito
 <h2>Toolbar</h2>
 <p></p>
 <span id="toolbar" class="ui-toolbar ui-widget-header ui-corner-all">
-	<span class="ui-toolbar-segment">
 
 	<button id="beginning">go to beginning</button>
 	<button id="rewind">rewind</button>
@@ -839,9 +804,6 @@ The date range picker plugin code is open source and available in a git reposito
 	<button id="forward">fast forward</button>
 	<button id="end">go to end</button>
 
-	</span>
-	
-	<span>
 
 	<input type="checkbox" id="shuffle" /><label for="shuffle">Shuffle</label>
 	
@@ -850,7 +812,7 @@ The date range picker plugin code is open source and available in a git reposito
 		<input type="radio" id="repeat1" name="repeat" /><label for="repeat1">Once</label>
 		<input type="radio" id="repeatall" name="repeat" /><label for="repeatall">All</label>
 	</span>
-	</span>
+
 </span>
 
 </div><!-- End demo -->
