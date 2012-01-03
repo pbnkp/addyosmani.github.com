@@ -117,11 +117,14 @@
                 var listId = Lists.create({
                     name: 'My first list'
                 }).id;
+
+                /*
                 Todos.create({
                     name: 'My first todo',
                     done: false,
                     listId: listId
                 });
+                */
             
                 localStorage.setItem('initialized', 'yup');
                 this.redirect('#/list/'+listId);
@@ -186,12 +189,12 @@
 
     // lists model
     Lists = Object.create(Model);
-    Lists.name = 'lists';
+    Lists.name = 'lists-sammyjs';
     Lists.init();
         
     // todos model
     Todos = Object.create(Model);
-    Todos.name = 'todos';
+    Todos.name = 'todos-sammyjs';
     Todos.init();
 
 
