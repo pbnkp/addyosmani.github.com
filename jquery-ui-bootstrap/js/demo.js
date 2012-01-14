@@ -135,6 +135,22 @@ $(function () {
         }
     });
 
+<<<<<<< HEAD
+=======
+    var $tab_title_input = $("#tab_title"),
+        $tab_content_input = $("#tab_content");
+    var tab_counter = 2;
+
+    // tabs init with a custom tab template and an "add" callback filling in the content
+    var $tabs = $("#tabs2").tabs({
+        tabTemplate: "<li><a href='#{href}'>#{label}</a></li>",
+        add: function (event, ui) {
+            var tab_content = $tab_content_input.val() || "Tab " + tab_counter + " content.";
+            $(ui.panel).append("<p>" + tab_content + "</p>");
+        }
+    });
+
+>>>>>>> c1090b09f684d186308977e14d5065f0d0be63f9
     // modal dialog init: custom buttons and a "close" callback reseting the form inside
     var $dialog = $("#dialog2").dialog({
         autoOpen: false,
@@ -223,6 +239,7 @@ $(function () {
             $form[0].reset();
         }
     });
+<<<<<<< HEAD
 
     // addTab form: calls addTab function on submit and closes the dialog
     var $form = $("form", $dialog).submit(function () {
@@ -255,6 +272,34 @@ $(function () {
     // File input (using http://filamentgroup.com/lab/jquery_custom_file_input_book_designing_with_progressive_enhancement/)
     $('#file').customFileInput({
         button_position : 'right'
+=======
+
+    // addTab form: calls addTab function on submit and closes the dialog
+    var $form = $("form", $dialog).submit(function () {
+        addTab();
+        $dialog.dialog("close");
+        return false;
+    });
+
+    // actual addTab function: adds new tab using the title input from the form above
+
+    function addTab() {
+        var tab_title = $tab_title_input.val() || "Tab " + tab_counter;
+        $tabs.tabs("add", "#tabs-" + tab_counter, tab_title);
+        tab_counter++;
+    }
+
+    // addTab button: just opens the dialog
+    $("#add_tab").button().click(function () {
+        $dialog.dialog("open");
+    });
+
+    // close icon: removing the tab on click
+    // note: closable tabs gonna be an option in the future - see http://dev.jqueryui.com/ticket/3924
+    $("#tabs span.ui-icon-close").live("click", function () {
+        var index = $("li", $tabs).index($(this).parent());
+        $tabs.tabs("remove", index);
+>>>>>>> c1090b09f684d186308977e14d5065f0d0be63f9
     });
 
 
@@ -273,5 +318,22 @@ $(function () {
     $("#play, #shuffle").button();
     $("#repeat").buttonset();
 
+<<<<<<< HEAD
 
 });
+=======
+    // Wijmo menu
+    $("#menu1").wijmenu();
+    $(".wijmo-wijmenu-text").parent().bind("click", function () {
+        $("#menu1").wijmenu("hideAllMenus");
+    });
+    $(".wijmo-wijmenu-link").hover(function () {
+        $(this).addClass("ui-state-hover");
+    }, function () {
+        $(this).removeClass("ui-state-hover");
+    });
+
+    //Toolbar
+    $("#play, #shuffle").button();
+    $("#repeat").buttonset();
+>>>>>>> c1090b09f684d186308977e14d5065f0d0be63f9
